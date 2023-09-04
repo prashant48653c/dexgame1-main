@@ -8,7 +8,7 @@ const Navbar = () => {
 const {userData}=useSelector(state=>state.auths)
 console.log(userData)
 
-if(userData){
+if(true){
   return (
     <nav className='nav'>
 
@@ -17,11 +17,21 @@ if(userData){
         <input type="text" className="search-game" placeholder='Search for any games' />
        
       </div>
-{
+
       
-      userData[0].user.photoURL ? <img src={userData[0].user.photoURL} alt="profile" className="avatar" />
-      :  <img src={gameimg} alt="profile" className="avatar" />
-}
+      {userData === false ? (
+  <img src={gameimg} alt="profile" className="avatar" />
+) : (
+  userData && userData[0] && userData[0].user ? (
+    <img src={userData[0].user.photoURL} alt="profile" className="avatar" />
+  ) : (
+  <img src={"https://i.pinimg.com/736x/92/63/62/9263620cd2b6d9488c58cf9150e770fe.jpg"} alt="profile" className="avatar" />
+     
+  )
+)}
+
+      
+
 
 
 

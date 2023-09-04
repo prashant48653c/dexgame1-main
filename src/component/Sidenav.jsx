@@ -1,10 +1,12 @@
 import React,{useState} from 'react'
 import chat from '../assets/chat.svg'
 import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux';
 
 const Sidenav = () => {
  const navigate=useNavigate();
 
+ const {userData}=useSelector(state=>state.auths)
 const [activebtn, setactivebtn] = useState(0)
 const handleButtonClick = (buttonIndex) => {
   setactivebtn(buttonIndex);
@@ -32,7 +34,14 @@ const handleButtonClick = (buttonIndex) => {
 </div>
 
 <div className={`side-icons  ${activebtn === 3 ? "active":""}` }   onClick={() => handleButtonClick(3)}>
-  <img className='side-icon' onClick={()=>navigate("/profile")}  src={chat} alt="profile" /> 
+  {
+    userData ? (
+      <img className='side-icon' onClick={()=>navigate("/profile")}  src={chat} alt="profile" /> 
+
+    ): 
+    <img className='side-icon' onClick={()=>navigate("/unlock")}  src={chat} alt="profile" /> 
+    
+  }
 
 
 </div>

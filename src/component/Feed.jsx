@@ -59,7 +59,7 @@ console.log(gameID)
 
 
 
-  if (games && userData ) {
+  if (games || userData ) {
     return (
       <>
         <div className="main-container">
@@ -69,12 +69,13 @@ console.log(gameID)
 
 
 
-            <img src={gameimg} alt="/Game without download" className="game" />
-            <img src={gameimg} alt="/Game without download" className="game" />
-            <img src={gameimg} alt="/Game without download" className="game" />
-            <img src={gameimg} alt="/Game without download" className="game" />
-            <img src={gameimg} alt="/Game without download" className="game" />
-            <img src={gameimg} alt="/Game without download" className="game" />
+            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+            <img src={"https://www.insidesport.in/wp-content/uploads/2021/09/dsfsdf.jpg"} alt="/Game without download" className="game" />
+            <img src={"https://wstatic-prod.pubg.com/web/live/static/og/img-og-pubg.jpg"} alt="/Game without download" className="game" />
+            <img src={"https://gamingonphone.com/wp-content/uploads/2021/03/91duOGX58CL-1.jpg"} alt="/Game without download" className="game" />
+            <img src={"https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_ShadowFight2_image1600w.jpg"} alt="/Game without download" className="game" />
+            <img src={"https://www.dexerto.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://editors.dexerto.com/wp-content/uploads/2022/04/11/Minecraft-crossplay-support.jpg"} alt="/Game without download" className="game" />
+            
 
 
 

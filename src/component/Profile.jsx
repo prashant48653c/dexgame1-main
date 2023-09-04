@@ -21,7 +21,7 @@ if(userData){
 <img src="https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg" alt="" /> 
 <div className="user-detail">
 <div className="user-info">
-<img src={userData[0].user.photoURL  ? userData[0].user.photoURL : gameimg }  alt="" />
+<img src={userData[0].user.photoURL  ? userData[0].user.photoURL : "https://i.pinimg.com/736x/92/63/62/9263620cd2b6d9488c58cf9150e770fe.jpg" }  alt="" />
 <div>
   <h3>{ userData[0].user.displayName ? (userData[0].user.displayName).toUpperCase()  : "Username"}</h3>
 <p>{userData[0].user.email}</p>
