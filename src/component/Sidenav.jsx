@@ -16,23 +16,23 @@ const handleButtonClick = (buttonIndex) => {
 
 <div className={`side-icons  ${activebtn === 0 ? "active":""}`  }  onClick={() => handleButtonClick(0)}  >
 
- <img className={` side-icon `} onClick={()=>navigate("/login")}  src={chat} alt="community"  />
+ <img className={` side-icon `} onClick={()=>navigate("/")}  src={chat} alt="feed"  />
 
 </div>
 
 <div className={`side-icons  ${activebtn === 1 ? "active":""}` }   onClick={() => handleButtonClick(1)}>
-    <img className='side-icon ' onClick={()=>navigate("/signup")}  src={chat} alt="community" /> 
+    <img className='side-icon ' onClick={()=>navigate("/community")}  src={chat} alt="community" /> 
 
 </div>
 
 <div className={`side-icons  ${activebtn === 2 ? "active":""}` }   onClick={() => handleButtonClick(2)}>
-  <img className='side-icon  ' onClick={()=>navigate("/create")}  src={chat} alt="store" /> 
+  <img className='side-icon  ' onClick={()=>navigate("/store")}  src={chat} alt="store" /> 
 
 
 </div>
 
 <div className={`side-icons  ${activebtn === 3 ? "active":""}` }   onClick={() => handleButtonClick(3)}>
-  <img className='side-icon' onClick={()=>navigate("/profile")}  src={chat} alt="community" /> 
+  <img className='side-icon' onClick={()=>navigate("/profile")}  src={chat} alt="profile" /> 
 
 
 </div>
