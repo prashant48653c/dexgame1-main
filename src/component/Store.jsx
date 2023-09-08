@@ -63,6 +63,26 @@ const {gameSeries}=useSelector(state => state.downloaders)
        </div>
       
     </article>
+
+    <article className="fav-game">
+       <img src={gameimg} alt="" className="fav-img" />
+       <div>
+       <p>#1 Top 2015</p>
+       <h3>The witcher 3: Wild hunt </h3>
+       <p className="genre">Action,Adventure</p>
+       </div>
+      
+    </article>
+
+    <article className="fav-game">
+       <img src={gameimg} alt="" className="fav-img" />
+       <div>
+       <p>#1 Top 2015</p>
+       <h3>The witcher 3: Wild hunt </h3>
+       <p className="genre">Action,Adventure</p>
+       </div>
+      
+    </article>
   </section>
 
   <section className="suggested-game-container">
@@ -137,6 +157,8 @@ const {gameSeries}=useSelector(state => state.downloaders)
 <h2>Find Games By Developers</h2>
 
  
+<div id='game-list'>
+
 
 <article className="dev-info">
 
@@ -159,6 +181,55 @@ const {gameSeries}=useSelector(state => state.downloaders)
         
     </div>
 </article>
+
+
+<article className="dev-info">
+
+    <img src={gameimg} alt="" className="dev-logo" />
+    <div className="dev-game">
+
+{
+  gameSeries.map((game,i)=>{
+    return(
+      <div className="dev-game1" key={i} >
+      <img src={game.background_image} alt="" />
+      <h3> {game.name}</h3>
+  </div>
+    )
+  })
+}
+       
+
+        
+        
+    </div>
+</article>
+
+
+
+<article className="dev-info">
+
+    <img src={gameimg} alt="" className="dev-logo" />
+    <div className="dev-game">
+
+{
+  gameSeries.map((game,i)=>{
+    return(
+      <div className="dev-game1" key={i} >
+      <img src={game.background_image} alt="" />
+      <h3> {game.name}</h3>
+  </div>
+    )
+  })
+}
+       
+
+        
+        
+    </div>
+</article>
+
+</div>
 
 
 </section>

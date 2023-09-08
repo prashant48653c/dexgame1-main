@@ -543,7 +543,7 @@ flex-shrink: 0;
 }
 .favorite-game{
 display: flex;
-
+gap: 1.5rem;
 }
 .favorite-games h3{
   color: #000;
@@ -669,12 +669,18 @@ font-weight: 700;
 line-height: 2rem; /* 133.333% */
 margin: 5rem 0rem 2.5rem 0rem;
 }
+#game-list{
+  display: flex;
+  gap: 1.5rem;
+}
 
 .dev-info{
   width: 25.5rem;
   height:fit-content;
   flex-shrink: 0;
 background: var(--neutrals-white-00, #FFF);
+ 
+ 
   
 }
 .dev-logo{
