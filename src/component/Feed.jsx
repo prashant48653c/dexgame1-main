@@ -71,32 +71,38 @@ console.log(gameID)
           
 
             <article>
-            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+            <a href="https://krunker.io/" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           </a>
+            <p className="hover-p">Krunker</p>
+            </article>
+
+            <article>
+            <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           </a>
             <p className="hover-p">Free Fire</p>
             </article>
 
             <article>
-            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+            <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           </a>
             <p className="hover-p">Free Fire</p>
             </article>
 
             <article>
-            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           </a>
             <p className="hover-p">Free Fire</p>
             </article>
 
             <article>
-            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+            <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           </a>
             <p className="hover-p">Free Fire</p>
             </article>
 
             <article>
-            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
-            <p className="hover-p">Free Fire</p>
-            </article>
-
-            <article>
-            <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+            <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+           </a>
             <p className="hover-p">Free Fire</p>
             </article>
 
@@ -112,13 +118,16 @@ console.log(gameID)
           </section>
 
           <section className="banner">
+            <article>
             <div className="banner-text">
-              Games. Free. Now
+              Games.<br/> Free. Now
             </div>
             <button className="download-banner">
               <p className="text-download">Download and Play</p>
             </button>
 
+            </article>
+           
             <div className="banner-imgs">
               <img src={gameimg} alt="" className="banner-img1" />
               <img src={gameimg} alt="" className="banner-img2" />
@@ -128,12 +137,7 @@ console.log(gameID)
               <img src={gameimg} alt="" className="banner-img4" />
 
             </div>
-
-
-
-
-
-
+ 
           </section>
 
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 *{
   margin: 0;
@@ -270,20 +270,26 @@ line-height: 2rem; /* 133.333% */
 .banner{
   width: 79.5rem;
 height: 21rem;
-opacity: 0.30000001192092896;
+ 
 flex-shrink: 0;
-background-color: #000;
+ background-color: #000;
+display: flex;
+gap: 3.5rem;
+padding: 3rem 1.5rem;
 }
+
 .banner-text{
   width: 27.125rem;
   color: var(--neutrals-white-00, #FFF);
+ 
   font-family: Black Han Sans;
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  
 }
-.download-banner{
+.banner button{
   display: flex;
 width: 24.8125rem;
 height: 3.5rem;
@@ -292,19 +298,8 @@ justify-content: center;
 align-items: center;
 gap: 0.5rem;
 flex-shrink: 0;
-border-radius: 0.25rem;
+border-radius: 0.1875rem;
 background: var(--brand-colour-primary, #5700E5);
-}
-.text-download{
-  color: var(--neutrals-white-00, #FFF);
-text-align: center;
-
-/* Body/Base/Semi */
-font-family: Lexend;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-line-height: 1.5rem; /* 150% */
 }
 .banner-img1{
   width: 10.5rem;
@@ -328,6 +323,9 @@ transform: rotate(19.35deg);
 flex-shrink: 0;
 border-radius: 1rem;
 background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+position: relative;
+top: 16%;
+left: 4%;
 }
 .banner-img3{
   width: 8rem;
@@ -336,7 +334,9 @@ transform: rotate(8.049deg);
 flex-shrink: 0;
 border-radius: 0.5rem;
 background: url(<path-to-image>), lightgray 0px -2.167px / 100% 123.592% no-repeat;
-
+position: relative;
+top: -19%;
+left: 4%;
 }
 
 .banner-img4{
@@ -346,6 +346,9 @@ transform: rotate(4.317deg);
 flex-shrink: 0;
 border-radius: 1rem;
 background: url(<path-to-image>), lightgray -0.642px -1.534px / 100% 133.333% no-repeat;
+position: relative;
+top: 30%;
+left: 4%;
 }
 
 
