@@ -197,13 +197,35 @@ border: 1px solid green;
 
 
 }
+.without-download-container article{
+  display: inline-block;
+position: relative;
+overflow: hidden;
+ 
+  
+}
+.hover-p{
+   /* display: none;  */
+   position: absolute;
+ top: 100%; 
+ left: 45%;
+  color: white;
+  transition: all .2s linear;
+  
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
 .game{
   width: 24.5rem;
   height: 13.5rem;
   margin-left: 1.5rem ;
   margin-bottom: 3rem;
   flex-shrink: 0;
-
+ cursor: pointer;
+ 
 
 /* Normal/Medium */
 border-radius: 0.5rem;
@@ -213,11 +235,24 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 
 }
 .game:hover{
   border-radius: 0.5rem;
-background: url(), lightgray -47.274px -0.568px / 137.143% 100% no-repeat;
-
-/* Normal/large */
+background:  lightgray -47.274px -0.568px / 137.143% 100% no-repeat;
+ 
 box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
 }
+.without-download-container article:hover .hover-p{
+top: 65%;
+}
+
+
+
+
+
+
+
+
+
+
+
 .instand-play{
   color: var(--neutrals-black-10, #1A1A1A);
 text-align: left;
