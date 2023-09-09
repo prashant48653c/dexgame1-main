@@ -59,7 +59,7 @@ console.log(gameID)
 
 
 
-  if (games || userData ) {
+  if (games && userData ) {
     return (
       <>
         <div className="main-container">

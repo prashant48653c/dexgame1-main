@@ -5,13 +5,26 @@ import { useSelector ,useDispatch} from 'react-redux'
 import { fetchData } from '../fetched/fetch'
 import { setGameID } from '../slices/feedslicer'
 import { setGameSeries } from '../slices/downloaderslicer'
+import { useNavigate } from 'react-router-dom'
 
 const Store = () => {
 
+ 
   const dispatch=useDispatch()
   const {games ,gameID}=useSelector(state => state.feeds)
 const {gameSeries}=useSelector(state => state.downloaders)
 //  console.log(gameSeries)
+
+const navigate = useNavigate()
+
+const navigateToDownloader = (e) => {
+  e.preventDefault()
+console.log(game.id)
+dispatch(setGameID(game.id))
+// navigate("/downloader")
+}
+
+
 
  useEffect(()=>{
   fetchData(`games/${gameID || 5286 }/game-series`).then((res)=>{
@@ -33,8 +46,18 @@ const {gameSeries}=useSelector(state => state.downloaders)
   games.length === 0 ? ( <p>Not found</p> ):
   (
     games.map((game,i)=>{
+     
       return(
+        <div id='img-container'>
       <img src={game.background_image} key={i} alt="game_img" className="slideing-img" />
+<div className="img-data">
+  <h2>GTA</h2>
+  <p>Step into the hauntingly beautiful world of Limbo, where darkness and puzzles intertwine, challenging your mind in a captivating black-and-white platforming experience.</p>
+  <button onClick={navigateToDownloader} > Download Now</button>
+</div>
+
+        </div>
+    
       )
     })
   )
