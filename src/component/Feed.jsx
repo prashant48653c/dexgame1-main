@@ -44,13 +44,16 @@ const Feed = () => {
 
   //navigate setting
   const navigate = useNavigate()
+
   const navigateToDownloader = (game) => {
     console.log(game.id)
     dispatch(setGameID(game.id))
     navigate("/downloader")
   }
 
-
+ const navToStore=()=>{
+  navigate("/store")
+ } 
 
 
 
@@ -122,8 +125,8 @@ const Feed = () => {
               <div className="banner-text">
                 Games.<br /> Free. Now
               </div>
-              <button className="download-banner">
-                <p className="text-download">Download and Play</p>
+              <button className="download-banner" onClick={navToStore} >
+                <p className="text-download"  >Download and Play</p>
               </button>
 
             </article>

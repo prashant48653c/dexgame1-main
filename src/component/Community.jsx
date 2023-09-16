@@ -1,6 +1,13 @@
+import { Button } from '@chakra-ui/react'
 import React from 'react'
+import { useState } from "react";
 
 const Community = () => {
+  const [isToggled, setIsToggled] = useState(false);
+
+  const handleToggle = () => {
+    setIsToggled(!isToggled);
+  };
   return (
 <>
 
@@ -23,7 +30,13 @@ const Community = () => {
           <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" class="d-icon" />
           <p>Dark mode</p>
           </div>
-          <img class="d-toggle" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg" alt="" />
+           
+          <Button class="d-toggle"
+      colorScheme={isToggled ? "green" : "red"}
+      onClick={handleToggle}
+    >
+      {isToggled ? "On" : "Off"}
+    </Button>
         </div>
         
         </div>
