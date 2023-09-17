@@ -10,7 +10,7 @@ export const feedslicer = createSlice({
     games:null,
     gameID:null,
     searchResult:null,
-    searchedKey:""
+    searchedKey:null,
   },
 
   reducers: {

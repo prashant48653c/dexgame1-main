@@ -18,9 +18,9 @@ const Feed = () => {
   const dispatch = useDispatch()
   const { games, gameID,searchResult,searchedKey } = useSelector((state) => state.feeds)
   const { userData } = useSelector(state => state.auths)
-console.log(searchedKey)
+// console.log(searchedKey)
 
-//  dispatch(setSearchedKey("gta"))
+//  dispatch(setSearchedKey("g"))
 
   useEffect(() => {
     const mydata = JSON.parse(localStorage.getItem("data"));
@@ -39,13 +39,7 @@ console.log(searchedKey)
 
     })
 
-
-    fetchData(`games?&search=${searchedKey}`).then((res)=>{
-      console.log(res,"hi")
-     
-    }).catch((err)=>console.log(err))
-
-
+   
   }, [dispatch])
 
   console.log(gameID)

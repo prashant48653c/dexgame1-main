@@ -4,20 +4,26 @@ import { setUserData } from '../slices/authslicer'
 import { setSearchedKey } from '../slices/feedslicer'
 import { useDispatch, useSelector } from 'react-redux'
 import gameimg from '../assets/gameimg.png'
+import { fetchData } from '../fetched/fetch'
 
 const Navbar = () => {
   const dispatch=useDispatch()
 const {userData}=useSelector(state=>state.auths)
-const {searchedKey}=useSelector(state=>state.feeds)
+const { games, gameID,searchResult,searchedKey } = useSelector((state) => state.feeds)
 
-console.log(userData)
+
+// console.log(userData)
 
 
 const handleChange=async (e)=>{
-  const search_query= await e.target.value;
-  dispatch(setSearchedKey(search_query))
-  // console.log(searchedKey)
-  // console.log(e.target.value)
+  const searchText= await e.target.value;
+  
+//  dispatch(setSearchedKey(searchText))
+  fetchData(`games?&search=${searchText}`).then((res)=>{
+    console.log(res.results,"hello")
+    // console.log(e)
+   
+  })
 }
 
 if(true){
