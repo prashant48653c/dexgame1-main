@@ -16,24 +16,24 @@ const handleButtonClick = (buttonIndex) => {
     <aside className='sidenav' >
 
 
-<div className={`side-icons  ${activebtn === 0 ? "active":""}`  }  onClick={() => handleButtonClick(0)}  >
+<div className={`  ${activebtn === 0 ? "active":"side-icons"}`  }  onClick={() => handleButtonClick(0)}  >
 
  <img className={` side-icon `} onClick={()=>navigate("/")}  src={chat} alt="feed"  />
 
 </div>
 
-<div className={`side-icons  ${activebtn === 1 ? "active":""}` }   onClick={() => handleButtonClick(1)}>
+<div className={`  ${activebtn === 1 ? "active":"side-icons"}` }   onClick={() => handleButtonClick(1)}>
     <img className='side-icon ' onClick={()=>navigate("/community")}  src={chat} alt="community" /> 
 
 </div>
 
-<div className={`side-icons  ${activebtn === 2 ? "active":""}` }   onClick={() => handleButtonClick(2)}>
+<div className={`  ${activebtn === 2 ? "active":"side-icons"}` }   onClick={() => handleButtonClick(2)}>
   <img className='side-icon  ' onClick={()=>navigate("/store")}  src={chat} alt="store" /> 
 
 
 </div>
 
-<div className={`side-icons  ${activebtn === 3 ? "active":""}` }   onClick={() => handleButtonClick(3)}>
+<div className={` ${activebtn === 3 ? "active":"side-icons "}` }   onClick={() => handleButtonClick(3)}>
   {
     userData ? (
       <img className='side-icon' onClick={()=>navigate("/profile")}  src={chat} alt="profile" /> 
