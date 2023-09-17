@@ -1,12 +1,24 @@
 import React from 'react'
 import chat from '../assets/chat.svg'
 import { setUserData } from '../slices/authslicer'
-import { useSelector } from 'react-redux'
+import { setSearchedKey } from '../slices/feedslicer'
+import { useDispatch, useSelector } from 'react-redux'
 import gameimg from '../assets/gameimg.png'
 
 const Navbar = () => {
+  const dispatch=useDispatch()
 const {userData}=useSelector(state=>state.auths)
+const {searchedKey}=useSelector(state=>state.feeds)
+
 console.log(userData)
+
+
+const handleChange=async (e)=>{
+  const search_query= await e.target.value;
+  dispatch(setSearchedKey(search_query))
+  // console.log(searchedKey)
+  // console.log(e.target.value)
+}
 
 if(true){
   return (
@@ -14,7 +26,7 @@ if(true){
 
       <div className="search-bar">
         <img src={chat} alt="" className="search-icon" />
-        <input type="text" className="search-game" placeholder='Search for any games' />
+        <input type="text"  onChange={handleChange} className="search-game" placeholder='Search for any games' />
        
       </div>
 

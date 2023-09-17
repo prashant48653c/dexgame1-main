@@ -9,6 +9,8 @@ export const feedslicer = createSlice({
   initialState:{
     games:null,
     gameID:null,
+    searchResult:null,
+    searchedKey:""
   },
 
   reducers: {
@@ -18,11 +20,18 @@ export const feedslicer = createSlice({
     },
     setGameID:(state,action)=>{
       state.gameID=action.payload
+    },
+    setSearchResult:(state,action)=>{
+      state.searchResult=action.payload
+    },
+    setSearchedKey:(state,action)=>{
+      state.searchedKey=action.payload
     }
+
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { setGames,setGameID } = feedslicer.actions
+export const { setGames,setGameID,setSearchResult,setSearchedKey } = feedslicer.actions
 
 export default feedslicer.reducer 

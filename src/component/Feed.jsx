@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import gameimg from '../assets/gameimg.png'
 import chat from '../assets/chat.svg'
 import { fetchData } from '../fetched/fetch'
-import { setGameID, setGames } from '../slices/feedslicer'
+import { setGameID, setGames,setSearchResult ,setSearchedKey} from '../slices/feedslicer'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { setUserData } from '../slices/authslicer'
@@ -16,9 +16,11 @@ import { setUserData } from '../slices/authslicer'
 
 const Feed = () => {
   const dispatch = useDispatch()
-  const { games, gameID } = useSelector((state) => state.feeds)
+  const { games, gameID,searchResult,searchedKey } = useSelector((state) => state.feeds)
   const { userData } = useSelector(state => state.auths)
+console.log(searchedKey)
 
+//  dispatch(setSearchedKey("gta"))
 
   useEffect(() => {
     const mydata = JSON.parse(localStorage.getItem("data"));
@@ -36,6 +38,12 @@ const Feed = () => {
       dispatch(setGames(res.results))
 
     })
+
+
+    fetchData(`games?&search=${searchedKey}`).then((res)=>{
+      console.log(res,"hi")
+     
+    }).catch((err)=>console.log(err))
 
 
   }, [dispatch])
