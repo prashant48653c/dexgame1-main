@@ -13,7 +13,9 @@ const handleButtonClick = (buttonIndex) => {
 };
 
   return (
-    <aside className='sidenav' >
+    <aside className='side-section' >
+
+<section className="sidenav">
 
 
 <div className={`  ${activebtn === 0 ? "active":"side-icons"}`  }  onClick={() => handleButtonClick(0)}  >
@@ -45,6 +47,8 @@ const handleButtonClick = (buttonIndex) => {
 
 
 </div>
+
+</section>
     </aside>
   )
 }
