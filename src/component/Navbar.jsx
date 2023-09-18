@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import chat from '../assets/chat.svg'
 import { setUserData } from '../slices/authslicer'
 import { setSearchResult, setSearchedKey } from '../slices/feedslicer'
@@ -6,16 +6,23 @@ import { useDispatch, useSelector } from 'react-redux'
 import gameimg from '../assets/gameimg.png'
 import { fetchData } from '../fetched/fetch'
 import { useNavigate } from 'react-router-dom'
+import Option from './Option'
+
+
 const Navbar = () => {
   const navigate=useNavigate()
   const dispatch = useDispatch()
   const { userData } = useSelector(state => state.auths)
   const { games, gameID, searchResult, searchedKey } = useSelector((state) => state.feeds)
 
-
+const [showOption, setshowOption] = useState(false)
   // console.log(userData)
 
-
+const handleProfile=()=>{
+  showOption ?
+  setshowOption(false)
+  : setshowOption(true)
+}
  
   
   const handleClick=(e)=>{
@@ -46,12 +53,15 @@ const Navbar = () => {
           <img src={gameimg} alt="profile" className="avatar" />
         ) : (
           userData && userData[0] && userData[0].user ? (
-            <img src={userData[0].user.photoURL} alt="profile" className="avatar" />
+            <img src={userData[0].user.photoURL} alt="profile" className="avatar" onClick={handleProfile} />
           ) : (
             <img src={"https://i.pinimg.com/736x/92/63/62/9263620cd2b6d9488c58cf9150e770fe.jpg"} alt="profile" className="avatar" />
 
           )
         )}
+        {
+          showOption ? <Option/> : ""
+        }
 
 
 

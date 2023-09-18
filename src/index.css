@@ -9,6 +9,7 @@
 
 
 }
+ 
 
 #root {
   margin: 0;
@@ -2003,7 +2004,8 @@ p {
   
 .d-container {
   display: flex;
-  width: 18.4375rem;
+  min-width: 18.4375rem;
+  width: fit-content;
   padding: 1.5rem;
   flex-direction: column;
   align-items: flex-start;
@@ -2012,6 +2014,10 @@ p {
 
   /* Normal/large */
   box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
+
+  position: absolute;
+  top: 100%;
+  right: 1%;
 }
 
 .d-menus {

@@ -7,7 +7,7 @@ import { setGameID, setGames,setSearchResult ,setSearchedKey} from '../slices/fe
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { setUserData } from '../slices/authslicer'
-
+import Option from './Option'
 
 
 
@@ -64,7 +64,7 @@ const Feed = () => {
 
 
 
-  if (games || userData) {
+  if (games ) {
     return (
       <>
         <div className="main-container">

@@ -47,6 +47,8 @@ function App() {
 <Route  path='/create' element={   <Createaccount/>  }  />
 <Route  path='/login' element={   <Login/>  }  />
 <Route  path='/result' element={   <Result/>  }  />
+ 
+
 
 
 
