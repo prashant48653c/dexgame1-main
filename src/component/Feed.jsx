@@ -64,7 +64,7 @@ const Feed = () => {
 
 
 
-  if (games && userData) {
+  if (games || userData) {
     return (
       <>
         <div className="main-container">

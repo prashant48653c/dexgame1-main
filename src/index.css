@@ -1999,6 +1999,7 @@ p {
 
 /* dropdown menu 
  */
+  
 .d-container {
   display: flex;
   width: 18.4375rem;
@@ -2049,6 +2050,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   align-self: stretch;
+  cursor: pointer;
 }
 
 .d-pp {
@@ -2069,7 +2071,7 @@ p {
   height: 1rem;
 }
 
-.d-toggle {
+/* .d-toggle {
   display: flex;
   width: 2.25rem;
   height: 1.25rem;
@@ -2077,6 +2079,51 @@ p {
   align-items: center;
   border-radius: 6.25rem;
   background: var(--grey-200, #E5E7EA);
+} */
+.toggle {
+  position : relative ;
+  display : inline-block;
+  width: 2.25rem;
+  height: 1.25rem;
+  padding: 0.125rem;
+  background: var(--grey-200, #E5E7EA);
+  border-radius: 30px;
+ 
+}
+     
+/* After slide changes */
+.toggle:after {
+  content: '';
+  position: absolute;
+ 
+  border-radius: 50%;
+  background-color: white;
+  width: 1rem;
+height: 1rem;
+flex-shrink: 0;
+  fill: var(--primary-white, #FFF);
+filter: drop-shadow(0px 2px 5px rgba(103, 110, 118, 0.08)) drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.12));
+  top: 2px;
+  left: 2px;
+  transition:  all 0.2s;
+}
+     
+/* Toggle text */
+ 
+     
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+  left : 1.2rem;
+}
+
+.checkbox:checked + .toggle {
+  border-radius: 6.25rem;
+  background: var(--grey-200, #E5E7EA);
+}
+     
+/* Checkbox vanished */
+.checkbox {
+  display : none;
 }
 
 .d-pp-info {

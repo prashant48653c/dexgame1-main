@@ -23,6 +23,7 @@ const Signup = () => {
      
       localStorage.setItem("data",newdata)
     navigate("/")
+    window.location.reload()
 
       
     })
