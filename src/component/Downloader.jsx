@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 const Downloader = () => {
 
     const   [image, setImage] = useState('')
+    const [show, setshow] = useState(false)
 
 
 
@@ -52,6 +53,11 @@ const Downloader = () => {
         setImage(newImg)
         console.log(image)
     }
+    const handleShow=()=>{
+        show ? setshow(false)
+        : setshow(true)
+    }
+    
 
 
 
@@ -89,9 +95,13 @@ const Downloader = () => {
 
                             <section className="game-detail">
                                 <h2>About the game</h2>
-                                <p>{details.description_raw.slice(0, 500) + "..."}</p>
+                                {
+                                    show ?   <p>{details.description_raw.slice(0, 500) + "..."}</p> :
+                                    <p>{details.description_raw}</p>
+                                }
+                              
 
-                                <button>Show more
+                                <button onClick={handleShow } >Show more 
                                     <img src={chat} alt="" />
 
                                 </button>
