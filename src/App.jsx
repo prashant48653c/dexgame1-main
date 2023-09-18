@@ -16,6 +16,7 @@ import Community from './component/Community'
 import Createaccount from './Authentication/Createaccount'
 import Login from './Authentication/Login'
 import Signup from './Authentication/Signup'
+import Result from './component/Result'
 function App() {
  
   return (
@@ -45,6 +46,7 @@ function App() {
 
 <Route  path='/create' element={   <Createaccount/>  }  />
 <Route  path='/login' element={   <Login/>  }  />
+<Route  path='/result' element={   <Result/>  }  />
 
 
 
