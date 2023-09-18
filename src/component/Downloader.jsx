@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 const Downloader = () => {
 
     const   [image, setImage] = useState('')
-    const [show, setshow] = useState(false)
+    const [show, setshow] = useState(true)
 
 
 
@@ -101,7 +101,9 @@ const Downloader = () => {
                                 }
                               
 
-                                <button onClick={handleShow } >Show more 
+                                <button onClick={handleShow } >{
+                                    show ? "Show more": "Show less"
+                                }  
                                     <img src={chat} alt="" />
 
                                 </button>

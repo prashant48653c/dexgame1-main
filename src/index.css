@@ -934,7 +934,8 @@ z-index: 22;
 
 .game-detail {
   width: 50.25rem;
-  height: 16.5rem;
+  min-height: 16.5rem;
+  height: auto;
   flex-shrink: 0;
   margin-bottom: 5rem;
 }
