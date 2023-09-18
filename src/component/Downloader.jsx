@@ -1,6 +1,6 @@
 import gameimg from '../assets/gameimg.png'
 import chat from '../assets/chat.svg'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { fetchData } from '../fetched/fetch'
 import { useDispatch } from 'react-redux'
@@ -9,6 +9,11 @@ import { setGameID } from '../slices/feedslicer'
 import { Link } from 'react-router-dom'
 
 const Downloader = () => {
+
+    const   [image, setImage] = useState('')
+
+
+
     const dispatch = useDispatch()
     const { screenshot, details, downloadLinks, publisherData } = useSelector((state) => state.downloaders);
     const { gameID } = useSelector(state => state.feeds)
@@ -41,6 +46,13 @@ const Downloader = () => {
 
     }, [dispatch])
 
+    const handleImg=(e)=>{
+       
+        const newImg=e.target.src;
+        setImage(newImg)
+        console.log(image)
+    }
+
 
 
     if (details && screenshot && gameID && downloadLinks) {
@@ -53,17 +65,22 @@ const Downloader = () => {
 
                         <article className="about-game">
                             <div className="game-images">
-                                <img src={screenshot[0].image} alt="" />
-                                <div className="other-game-images">
+                                <img src={ image != [] ? image :  screenshot[0].image} alt="" />
+                                <div className="img-scroller">
+                                    <img src={chat} alt="" />
 
-                                    {
+                                        <div className="other-game-images">
+                                        {
                                         screenshot.map((img, i) => {
                                             return (
-                                                <img src={img.image} alt="" key={i} />
+                                                <img src={img.image} onClick={handleImg} alt="" key={i} />
 
                                             )
                                         })
                                     }
+                                        </div>
+                                   
+                                      <img src={chat} alt="" />
 
 
                                 </div>
@@ -108,7 +125,7 @@ const Downloader = () => {
                                         <p> Average rating</p>
                                         <h4>{details.rating}</h4>
 
-                                  
+
 
 
                                     </div>

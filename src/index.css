@@ -901,7 +901,16 @@ cursor: pointer;
   align-items: center;
   height: 7.25rem;
   gap: 1.5rem;
+  overflow: auto;
+ 
+}
+.img-scroller{
   overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  max-width: 100%;
+  margin: 0 2rem 0 rem;
+  width: 50.25rem;
 }
 
 .icon-img {
