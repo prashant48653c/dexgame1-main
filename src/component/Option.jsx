@@ -32,7 +32,7 @@ const Option = () => {
                 <div className="d-pp-info">
 
 
-                  <h2>{userData[0].user.displayName || "Your Name" }</h2>
+                  <h2>{userData[0].user.displayName || "Your Name"}</h2>
                   <p>{userData[0].user.email}</p>
 
 
