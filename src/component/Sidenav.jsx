@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
 import chat from '../assets/chat.svg'
+import log from '../assets/log.svg'
+
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
+
 
 const Sidenav = () => {
  const navigate=useNavigate();
@@ -16,6 +19,9 @@ const handleButtonClick = (buttonIndex) => {
     <aside className='side-section' >
 
 <section className="sidenav">
+  <div className="dex-logo">
+    <img src={log} alt="" />
+  </div>
 
 
 <div className={`  ${activebtn === 0 ? "active":"side-icons"}`  }  onClick={() => handleButtonClick(0)}  >

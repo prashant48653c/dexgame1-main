@@ -76,37 +76,37 @@ const Feed = () => {
 
 
             <article>
-              <a href="https://krunker.io/" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+              <a href="https://krunker.io/" target="_blank" > <img src={"https://images.crazygames.com/games/krunker-io/cover-1591336739727.png?auto=format,compress&q=75&cs=strip"} alt="/Game without download" className="game" />
               </a>
               <p className="hover-p">Krunker</p>
             </article>
 
             <article>
-              <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+              <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://s.cafebazaar.ir/images/upload/screenshot/com.rhm.TwoBall3d-ec669206-9744-48ba-9370-4a11c523d913.jpeg?x-img=v1/resize,h_300,lossless_false"} alt="/Game without download" className="game" />
               </a>
-              <p className="hover-p">Free Fire</p>
+              <p className="hover-p">Two Ball 3D</p>
             </article>
 
             <article>
-              <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+              <a href="https://poki.com/en/g/subway-surfers" target="_blank" > <img src={"https://subwaysurfers.com/media/f2ldlfpi/subwaysurfers_01.png"} alt="/Game without download" className="game" />
               </a>
-              <p className="hover-p">Free Fire</p>
+              <p className="hover-p">Subway Surfer</p>
             </article>
 
             <article>
-              <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+              <a href="https://hole-io.com/" target="_blank" > <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN_FBVC51KNeQR8b_gqxTK-P_RB8sCmqf5o1nT3jwKyxyYCDGu4WgSbtbuBOtZIJe1btM&usqp=CAU"} alt="/Game without download" className="game" />
               </a>
-              <p className="hover-p">Free Fire</p>
+              <p className="hover-p">Hole IO</p>
             </article>
 
             <article>
-              <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+              <a href="https://slither.io/" target="_blank" > <img src={"https://cdn6.aptoide.com/imgs/e/d/d/eddf59db19e47f26e20042618cb025e8_fgraphic.png"} alt="/Game without download" className="game" />
               </a>
-              <p className="hover-p">Free Fire</p>
+              <p className="hover-p"> Slither</p>
             </article>
 
             <article>
-              <a href="https://www.twoplayergames.org/embed/two-ball-3d" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
+              <a href="https://media.tenor.com/x8v1oNUOmg4AAAAd/rickroll-roll.gif" target="_blank" > <img src={"https://images.hindustantimes.com/tech/img/2023/04/07/1600x900/526ab8efaf60be59ccf03e314e019a3a_1671931798562_1680829788841_1680829788841.jpg"} alt="/Game without download" className="game" />
               </a>
               <p className="hover-p">Free Fire</p>
             </article>
