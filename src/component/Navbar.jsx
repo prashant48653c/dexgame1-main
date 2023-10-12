@@ -60,7 +60,7 @@ const handleProfile=()=>{
           )
         )}
         {
-          showOption ? <Option/> : ""
+          showOption ? <Option/> : " "
         }
 
 
