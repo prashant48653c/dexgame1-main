@@ -4,7 +4,7 @@ import chat from '../assets/chat.svg'
 export const Editor = () => {
   return (
     <>
-    <main className="main-container">
+  
 
     <section className="profile-editor">
     <h3>Edit profile</h3>
@@ -34,7 +34,7 @@ export const Editor = () => {
         <button id='save'>Save</button>
     </div>
 </section>
-    </main>
+
 
     </>
   )

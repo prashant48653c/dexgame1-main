@@ -17,11 +17,11 @@ const {gameSeries}=useSelector(state => state.downloaders)
 
 const navigate = useNavigate()
 
-const navigateToDownloader = (e) => {
-  e.preventDefault()
+const navigateToDownloader = (e,game) => {
+ e.preventDefault()
 console.log(game.id)
 dispatch(setGameID(game.id))
-// navigate("/downloader")
+navigate("/downloader")
 }
 
 
@@ -40,7 +40,7 @@ dispatch(setGameID(game.id))
 
   return (
     <>
- <div className="main-container store">
+ <div className="main-container ">
 <div className='div-slide' >
 {
   games.length === 0 ? ( <p>Not found</p> ):
@@ -53,7 +53,7 @@ dispatch(setGameID(game.id))
 <div className="img-data">
   <h2>GTA</h2>
   <p>Step into the hauntingly beautiful world of Limbo, where darkness and puzzles intertwine, challenging your mind in a captivating black-and-white platforming experience.</p>
-  <button onClick={navigateToDownloader} > Download Now</button>
+  <button onClick={(e)=>navigateToDownloader(e,game)} > Download Now</button>
 </div>
 
         </div>
