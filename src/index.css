@@ -13,7 +13,7 @@
 html {
   font-size: 100%;
   
- overflow-x:hidden;
+ 
 }
 
 #root {
@@ -21,10 +21,10 @@ html {
   padding: 0;
   box-sizing: border-box;
   display: flex;
- width: 100%;
+ 
  
   text-align: left;
-  border: 1px solid green;
+ 
 
 }
 
@@ -45,9 +45,11 @@ img {
 }
 
 body {
-  max-width: 100%;
-  
+  width: 100%;
+ 
   height: auto;
+  
+
 
 }
 
@@ -150,10 +152,11 @@ body {
   padding: 1rem 2rem;
   position: sticky;
   top: 0%;
+  left: 0;
   z-index: 22;
   justify-content: center;
   align-items: center;
-  gap: 53.125rem;
+  gap: 50.125rem;
   background: var(--neutrals-white-00, #FFF);
    
 }
