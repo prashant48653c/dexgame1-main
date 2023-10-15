@@ -77,62 +77,59 @@ navigate("/downloader")
   </section>
 
   <section className="favorite-game">
-    <article className="fav-game">
-       <img src={gameimg} alt="" className="fav-img" />
+  {
+  games.length === 0 ? ( <p>Not found</p> ):
+  (
+    games.map((game,i)=>{
+     
+      return(
+        <article className="fav-game">
+       <img src={game.background_image} alt="" className="fav-img" />
        <div>
        <p>#1 Top 2015</p>
-       <h3>The witcher 3: Wild hunt </h3>
+       <h3>{game.name} </h3>
        <p className="genre">Action,Adventure</p>
        </div>
       
     </article>
+    
+      )
+    })
+  )
+}
+   
 
-    <article className="fav-game">
-       <img src={gameimg} alt="" className="fav-img" />
-       <div>
-       <p>#1 Top 2015</p>
-       <h3>The witcher 3: Wild hunt </h3>
-       <p className="genre">Action,Adventure</p>
-       </div>
-      
-    </article>
-
-    <article className="fav-game">
-       <img src={gameimg} alt="" className="fav-img" />
-       <div>
-       <p>#1 Top 2015</p>
-       <h3>The witcher 3: Wild hunt </h3>
-       <p className="genre">Action,Adventure</p>
-       </div>
-      
-    </article>
+   
   </section>
 
-  <section className="suggested-game-container">
+  <section className="suggested-game-container suggested-store">
   <div className='heading'>  
   
-    <h2 className="suggested-title">Games just for you</h2>
+    <h2 className="suggested-title">Most Downloaded</h2>
   </div>
 
-<article className="suggested-games">
-
-<div className="suggested-game">
-<img src={gameimg} alt="" className="suggested-game-img" />
-<div>
-<h3>Game of throne</h3>
-<p className="description">Unleash your criminal ambitions and dominate the streets of Los Santos in the action-packed GTA 5.</p>
-</div>
-</div>
-
-<div className="suggested-game">
-<img src={gameimg} alt="" className="suggested-game-img" />
-<div>
-<h3>Grand Thief Auto</h3>
-<p className="description">Unleash your criminal ambitions and dominate the streets of Los Santos in the action-packed GTA 5.</p>
-</div>
+<article className="suggested-games ">
 
 
-</div>
+{
+  games.length === 0 ? ( <p>Not found</p> ):
+  (
+    games.map((game,i)=>{
+     
+      return(
+        <div className="suggested-game">
+        <img src={game.background_image} alt="" className="suggested-game-img" />
+        <div>
+        <h3>{game.name}</h3>
+        <p className="description">Unleash your criminal ambitions and dominate the streets of Los Santos in the action-packed GTA 5.</p>
+        </div>
+        </div>
+        
+    
+      )
+    })
+  )
+}
 
 
 
@@ -144,7 +141,7 @@ navigate("/downloader")
 
 
 
-  <section className="suggested-game-container">
+  <section className="suggested-game-container foryou">
   <div className='heading'>  
     <img src={chat} id='suggested-icon' alt="" />
     <h2 className="suggested-title">Games just for you</h2>
@@ -152,20 +149,27 @@ navigate("/downloader")
 
 <article className="suggested-games">
 
-<div className="suggested-game">
-<img src={gameimg} alt="" className="suggested-game-img" />
-<h3>Game of throne</h3>
-<p>Action,Adventure</p>
-<button >Download and Play</button>
-</div>
 
-<div className="suggested-game">
-<img src={gameimg} alt="" className="suggested-game-img" />
+{
+  games.length === 0 ? ( <p>Not found</p> ):
+  (
+    games.map((game,i)=>{
+     
+      return(
+        <div className="suggested-game">
+        <img src={game.background_image} alt="" className="suggested-game-img" />
+        <h3>{game.name}</h3>
+        <p>Action,Adventure</p>
+        <button >Download and Play</button>
+        </div>
+        
+    
+      )
+    })
+  )
+}
 
-<h3>Grand Thief Auto</h3>
-<p>Action,Mafia</p>
-<button >Download and Play</button>
-</div>
+
 
 
 
