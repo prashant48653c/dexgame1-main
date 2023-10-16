@@ -38,7 +38,7 @@ const handleProfile=()=>{
     }
   }
 
-  if (true) {
+
     return (
       <nav className='nav'>
 
@@ -48,21 +48,21 @@ const handleProfile=()=>{
 
         </div>
 
-
-        {userData === false ? (
-          <img src={gameimg} alt="profile" className="avatar" />
-        ) : (
-          userData && userData[0] && userData[0].user ? (
+          <div>
+         {
+          (userData && userData[0] && userData[0].user) ? (
             <img src={userData[0].user.photoURL} alt="profile" className="avatar" onClick={handleProfile} />
           ) : (
-            <img src={"https://i.pinimg.com/736x/92/63/62/9263620cd2b6d9488c58cf9150e770fe.jpg"} alt="profile" className="avatar" />
+            <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"} alt="profile" className="avatar" />
 
           )
-        )}
+        }
         {
           showOption ? <Option/> : " "
         }
 
+          </div>
+      
 
 
 
@@ -70,7 +70,7 @@ const handleProfile=()=>{
 
       </nav>
     )
-  }
+  
 }
 
 export default Navbar

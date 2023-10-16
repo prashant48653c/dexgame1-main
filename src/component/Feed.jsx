@@ -192,11 +192,14 @@ const Feed = () => {
                 (<p>No results</p>) :
                 (
                   games.map((game, i) => {
-                    return (
-                      <div className="more-game-div" key={i} >
-                        <img src={game.background_image || gameimg} alt="game_img" />
-                      </div>
-                    )
+                     if(i<9){
+                      return (
+                        <div className="more-game-div" key={i} >
+                          <img src={game.background_image || gameimg} alt="game_img" />
+                        </div>
+                      )
+                     }
+                   
 
                   })
 
