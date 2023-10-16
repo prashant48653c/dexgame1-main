@@ -46,7 +46,7 @@ img {
 
 body {
   width: 100%;
- 
+ overflow-x: hidden;
   height: auto;
   
 
@@ -426,6 +426,10 @@ body {
   flex-shrink: 0;
   margin-bottom: 2rem;
 
+}
+.suggested-game div{
+  background-color: #fff;
+height: auto;
 }
 
 .suggested-game-container {
@@ -1252,6 +1256,7 @@ margin-bottom: 2.25rem;
 }
 .suggested-store{
   background-color: #F2F2F2;;
+   margin-top: 0;
 }
 
 .store-more-game {
@@ -1745,7 +1750,7 @@ p {
 
 
 .unlock {
-  width: 30.0625rem;
+  max-width:100%;
   height: 32.75rem;
   display: flex;
   flex-direction: column;
