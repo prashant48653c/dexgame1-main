@@ -134,12 +134,12 @@ const Feed = () => {
             </article>
 
             <div className="banner-imgs">
-              <img src={gameimg} alt="" className="banner-img1" />
-              <img src={gameimg} alt="" className="banner-img2" />
+              <img src={games[0].background_image} alt="" className="banner-img1" />
+              <img src={games[11].background_image} alt="" className="banner-img2" />
 
-              <img src={gameimg} alt="" className="banner-img3" />
+              <img src={games[13].background_image} alt="" className="banner-img3" />
 
-              <img src={gameimg} alt="" className="banner-img4" />
+              <img src={games[18].background_image} alt="" className="banner-img4" />
 
             </div>
 

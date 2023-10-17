@@ -146,7 +146,7 @@ const Downloader = () => {
 
                                 <div className="comment">
                                     <div className="pp-detail">
-                                        <img src={chat} alt="" />
+                                        <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"} alt="" />
                                         <p>Prashant Acharya</p>
 
                                     </div>
@@ -165,7 +165,7 @@ const Downloader = () => {
 
                                 <div className="comment">
                                     <div className="pp-detail">
-                                        <img src={chat} alt="" />
+                                        <img src={"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"} alt="" />
                                         <p>Safal Poudel</p>
 
                                     </div>
