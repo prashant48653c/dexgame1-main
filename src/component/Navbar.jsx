@@ -7,8 +7,9 @@ import gameimg from '../assets/gameimg.png'
 import { fetchData } from '../fetched/fetch'
 import { useNavigate } from 'react-router-dom'
 import Option from './Option'
-
-
+import {HiHome} from 'react-icons/hi' 
+import {HiSearch} from 'react-icons/hi'
+ 
 const Navbar = () => {
   const navigate=useNavigate()
   const dispatch = useDispatch()
@@ -43,7 +44,8 @@ const handleProfile=()=>{
       <nav className='nav'>
 
         <div className="search-bar">
-          <img src={chat} alt="" className="search-icon" />
+          
+          <HiSearch color='white'  className="search-icon"/>
           <input type="text"   onKeyDown={handleClick} className="search-game" placeholder='Search for any games' />
 
         </div>

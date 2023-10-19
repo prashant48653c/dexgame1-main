@@ -1140,6 +1140,7 @@ margin-bottom: 2.25rem;
   align-items: center;
   gap: 1rem;
 }
+ 
 
 .box p {
   color: #000;
@@ -1171,6 +1172,9 @@ margin-bottom: 2.25rem;
   justify-content: center;
   align-items: center;
   gap: 0.9375rem;
+}
+.side-icons{
+  color: #76808b;
 }
 
 .comment {
