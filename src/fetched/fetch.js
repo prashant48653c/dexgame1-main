@@ -7,10 +7,10 @@ const params = {
   key: API_KEY,
   // You can add more parameters here, like ordering, filtering, etc.
 };
-
+//Api call master function
 export const fetchData = async (url) => {
   try {
-    console.log("fetchData ran");
+    console.log("Data is being fetched");
     const { data } = await axios.get(`${API_URL}/${url}`, {
       params: params,  // Corrected parameter placement
     });

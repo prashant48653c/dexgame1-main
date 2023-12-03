@@ -30,7 +30,6 @@ function App() {
 
 <main className="main">
 <Navbar/> 
-
 <Routes>
 
 <Route  path='/' element={   <Feed/>  }  />

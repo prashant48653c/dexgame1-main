@@ -20,8 +20,8 @@ const Feed = () => {
   const { userData } = useSelector(state => state.auths)
 // console.log(searchedKey)
 
-//  dispatch(setSearchedKey("g"))
-
+ 
+// getting user information through cookie
   useEffect(() => {
     const mydata = JSON.parse(localStorage.getItem("data"));
 
@@ -29,12 +29,8 @@ const Feed = () => {
       dispatch(setUserData([mydata]))
       console.log(userData)
     }
-
-
-
+    //getting games from api
     fetchData("games").then((res) => {
-      // console.log(res.results)
-
       dispatch(setGames(res.results))
 
     })

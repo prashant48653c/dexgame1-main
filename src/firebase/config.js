@@ -4,6 +4,8 @@ import { initializeApp } from "firebase/app";
 import 'firebase/auth';
 import { GoogleAuthProvider, getAuth } from "firebase/auth";
 
+
+//Initializing firebase as backend
 const firebaseConfig = {
   apiKey: "AIzaSyCS7TfIWGK_cYSb48Px-onHMz_hTC-T_LI",
   authDomain: "dexgame-74167.firebaseapp.com",
