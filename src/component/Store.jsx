@@ -17,8 +17,8 @@ const {gameSeries}=useSelector(state => state.downloaders)
 
 const navigate = useNavigate()
 
-const navigateToDownloader = (e,game) => {
- e.preventDefault()
+const navigateToDownloader = (game) => {
+ 
 console.log(game.id)
 dispatch(setGameID(game.id))
 navigate("/downloader")
@@ -80,10 +80,10 @@ navigate("/downloader")
   {
   games.length === 0 ? ( <p>Not found</p> ):
   (
-    games.map((game,i)=>{
+    games.slice(8).map((game,i)=>{
      
       return(
-        <article className="fav-game">
+        <article onClick={()=>navigateToDownloader(game)}  className="fav-game">
        <img src={game.background_image} alt="" className="fav-img" />
        <div>
        <p>#1 Top 2015</p>
@@ -114,10 +114,10 @@ navigate("/downloader")
 {
   games.length === 0 ? ( <p>Not found</p> ):
   (
-    games.map((game,i)=>{
+    games.slice(7).map((game,i)=>{
      
       return(
-        <div className="suggested-game">
+        <div onClick={()=>navigateToDownloader(game)}  className="suggested-game">
         <img src={game.background_image} alt="" className="suggested-game-img" />
         <div>
         <h3>{game.name}</h3>
@@ -156,7 +156,7 @@ navigate("/downloader")
     games.map((game,i)=>{
      
       return(
-        <div className="suggested-game">
+        <div key={i} className="suggested-game">
         <img src={game.background_image} alt="" className="suggested-game-img" />
         <h3>{game.name}</h3>
         <p>Action,Adventure</p>
@@ -193,9 +193,10 @@ navigate("/downloader")
     <div className="dev-game">
 
 {
-  gameSeries.map((game,i)=>{
+  gameSeries.slice(0,2).map((game,i)=>{
+   
     return(
-      <div className="dev-game1" key={i} >
+      <div onClick={()=>navigateToDownloader(game)} className="dev-game1" key={i} >
       <img src={game.background_image} alt="" />
       <h3> {game.name}</h3>
   </div>
@@ -216,9 +217,9 @@ navigate("/downloader")
     <div className="dev-game">
 
 {
-  gameSeries.map((game,i)=>{
+  gameSeries.slice(4,6).map((game,i)=>{
     return(
-      <div className="dev-game1" key={i} >
+      <div onClick={()=>navigateToDownloader(game)} className="dev-game1" key={i} >
       <img src={game.background_image} alt="" />
       <h3> {game.name}</h3>
   </div>
@@ -240,9 +241,9 @@ navigate("/downloader")
     <div className="dev-game">
 
 {
-  gameSeries.map((game,i)=>{
+  gameSeries.slice(8,13).map((game,i)=>{
     return(
-      <div className="dev-game1" key={i} >
+      <div onClick={(e)=>navigateToDownloader(game)} className="dev-game1" key={i} >
       <img src={game.background_image} alt="" />
       <h3> {game.name}</h3>
   </div>

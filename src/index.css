@@ -2174,7 +2174,21 @@ p {
   left: 2px;
   transition: all 0.2s;
 }
-
+.community{
+  display: grid;
+  place-content: center;
+ 
+}
+.community img{
+  height: 30rem;
+}
+#loadingBox {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 /* Toggle text */
 
 
@@ -2203,7 +2217,19 @@ p {
   gap: 0.5rem;
 }
 
-
+.result-game{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  transition: all .4s linear;
+  padding: 1rem;
+  
+}
+.result-game:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 
 /* responsive  */

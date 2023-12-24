@@ -187,10 +187,10 @@ const Feed = () => {
               {games.length === 0 ?
                 (<p>No results</p>) :
                 (
-                  games.map((game, i) => {
+                  games.slice(5).map((game, i) => {
                      if(i<9){
                       return (
-                        <div className="more-game-div" key={i} >
+                        <div onClick={()=>navigateToDownloader(game)} className="more-game-div" key={i} >
                           <img src={game.background_image || gameimg} alt="game_img" />
                         </div>
                       )
@@ -213,7 +213,22 @@ const Feed = () => {
       </>
     )
   } else {
-    console.log("Loading")
+   return(
+    <>
+    <div style={{
+       display: "flex",
+       alignItems: "center",
+       justifyContent: "center",
+       height: "100vh",
+       margin: 0,
+    }}>
+
+    </div>
+      <div id="loadingBox">
+    <p>Loading...</p>
+  </div>
+    </>
+   )
   }
 }
 
